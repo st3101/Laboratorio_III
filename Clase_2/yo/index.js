@@ -7,7 +7,7 @@
 // document.addEventListener("DOMContentLoaded", onInit); // importante no poner parentesis
 
 //const form;
-
+let str = [];
 document.addEventListener("DOMContentLoaded",onInit);
 
 function onInit(){
@@ -18,7 +18,21 @@ function onInit(){
         // Luego del primer parcial, comenzaremos a enviar los datos a un externo
         // evito el comportamiento que realiza por defecto
         e.preventDefault();
-        alert("entro");
+
+        for (let i = 0; i < form.length; i++) {
+    
+        const element = form.elements[i];
+        let str = element.name + ": " + element.value;
+    
+        if (element.type === "radio") {
+            str = element.name + ": " + (element.checked ? "on" : "off");
+        }
+        else if (element.type === "checkbox") {
+            str = element.name + ": " + (element.checked ? "on" : "off");
+        }
+        
+        console.log(str);
+        }
 
     });
 }

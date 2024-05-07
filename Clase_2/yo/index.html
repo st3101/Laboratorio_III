@@ -17,43 +17,45 @@
         <!-- Inputs Text -->
         <div class="form-group">
             <!-- Nombre -->
-            <label for="nombre">Nombre</label> 
-            <input 
-            type="text" 
-            name="nombre" 
-            id="nombre" 
-            autocomplete="off" 
-            placeholder="Ingrese nombre..">
-
-            <br>
-
+            <div>
+                <label for="nombre">Nombre</label> 
+                <input 
+                type="text" 
+                name="nombre" 
+                id="nombre" 
+                autocomplete="off" 
+                placeholder="Ingrese nombre..">
+            </div>
+            
             <!-- Edad -->
-            <label for="edad">Edad</label>
-            <input type="number" 
-            name="edad" 
-            id="edad"
-            autocomplete="on"
-            placeholder="Ingrese su edad">
-            <br>
+            <div>
+                <label for="edad">Edad</label>
+                <input type="number" 
+                name="edad" 
+                id="edad"
+                autocomplete="on"
+                placeholder="Ingrese su edad">
+            </div>
 
             <!-- Email -->
-            <label for="email">Email</label>
-            <input 
-            type="email"
-            name="email"
-            id="email"
-            autocomplete="on"
-            placeholder="Ingrese su email">
-
-            <br>
+            <div>
+                <label for="email">Email</label>
+                <input 
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="on"
+                placeholder="Ingrese su email">    
+            </div>
             
             <!-- Contraseña -->
-            <label for="contraseña">Contraseña</label>
-            <input type="password" 
-            name="contraseña" 
-            id="contraseña" 
-            placeholder="Ingrese contraseña..">
-
+            <div>
+                <label for="contraseña">Contraseña</label>
+                <input type="password" 
+                name="contraseña" 
+                id="contraseña" 
+                placeholder="Ingrese contraseña..">
+            </div>
         </div>
 
         <!-- Inputs Checkbox -->
@@ -93,7 +95,7 @@
             <label for="rfemenino">Femenino</label>
             <input 
             type="radio" 
-            name="genero" 
+            name="Femenino" 
             id="rfemenino">
 
             <br>
@@ -102,7 +104,7 @@
             <label for="rMasculino">Masculino</label>
             <input 
             type="radio" 
-            name="genero" 
+            name="Masculino" 
             id="rMasculino">
 
             <br>
@@ -111,7 +113,7 @@
             <label for="rTransformer">Transformer</label>
             <input 
             type="radio" 
-            name="genero" 
+            name="Transformer" 
             id="rTransformer">
         </div>
 
@@ -157,10 +159,11 @@
 
         </div>
 
-        <!-- inputs submit -->
-        <div class=" form-group">
-            <button type="submit">Enviar</button>
-        </div>
+        <!-- button submit -->
+        <div class="form-group">
+        <button type="submit">Enviar</button>
+    </div>
+
     </form>
 
 </body>
