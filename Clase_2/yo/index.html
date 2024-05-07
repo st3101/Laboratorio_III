@@ -4,27 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Ejercicio_1.css">
-    <script></script>
-    <title>Ejercicio_1</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+    <title>Clase 2</title>
 </head>
 
 <body>
 
-    <h2>Formulario</h2>
-
-    <form  action="" method="post">
-
-        <div class="form-group" style="margin-bottom: 10px;">
+    <!-- Formulario -->
+    <form  action="" method="post" id="form-usuario">        
+        <h2>Formulario</h2>
+        <!-- Inputs Text -->
+        <div class="form-group">
             <!-- Nombre -->
-            <label for="txtName">Nombre</label> 
+            <label for="nombre">Nombre</label> 
             <input 
             type="text" 
             name="nombre" 
-            id="name" 
+            id="nombre" 
             autocomplete="off" 
-            placeholder="Ingrese nombre.."
-            required>
+            placeholder="Ingrese nombre..">
 
             <br>
 
@@ -38,7 +37,7 @@
             <br>
 
             <!-- Email -->
-            <label for="txtEmail">Email</label>
+            <label for="email">Email</label>
             <input 
             type="email"
             name="email"
@@ -57,7 +56,8 @@
 
         </div>
 
-        <div class="form-group" style="margin-bottom: 10px;">
+        <!-- Inputs Checkbox -->
+        <div class="form-group"">
 
             <!-- Rock -->
             <label for="rock">Rock</label>
@@ -87,7 +87,8 @@
 
         </div>
 
-        <div class="form-group" style="margin-bottom: 10px;">
+        <!-- Inputs Radio -->
+        <div class="form-group">
             <!-- Femenino -->
             <label for="rfemenino">Femenino</label>
             <input 
@@ -113,9 +114,53 @@
             name="genero" 
             id="rTransformer">
         </div>
-        <br>
-        
-        <button type="submit">Enviar</button>
+
+        <!-- Inputs Select -->
+        <div class="form-group">
+            <label for="pais">Pais</label>
+
+            <select name="pais" id="pais">
+            <optgroup label="Lat">
+                <option value="1">Argentina</option>
+                <option value="2">Brazion</option>
+                <option value="3">Francia</option>
+            </optgroup>
+
+            <optgroup label="Eur">
+                <option value="4">Argentina</option>
+                <option value="5">Brazion</option>
+                <option value="6">Francia</option>
+            </optgroup>
+            </select>
+        </div>
+    
+        <!-- Inputs TextArea -->
+        <div class="form-group">
+            <label for="observacion">Observacion</label>
+            <textarea
+            type="text"
+            name="observacion"
+            id="observacion"
+            rows="4"
+            placeholder="Ingrese Observacion.."></textarea>
+        </div>
+
+        <!-- Inputs Files -->
+        <div class="form-group">
+            <label for="archivo">Archivo</label>
+            
+            <input
+            type="file"
+            name="archivo"
+            id="archivo"
+            placeholder="Ingrese Archivo..">
+
+        </div>
+
+        <!-- inputs submit -->
+        <div class=" form-group">
+            <button type="submit">Enviar</button>
+        </div>
     </form>
 
 </body>
