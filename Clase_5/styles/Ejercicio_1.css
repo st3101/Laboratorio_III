@@ -1,0 +1,33 @@
+:root {
+    --color-primary: #007bff;
+}
+  
+body {
+    background-color: #1f1f1f; color: rgb(0, 0, 0);
+}
+
+*{
+    margin: 300;
+    padding: 500;
+  
+    color: var(--primary-color);
+}
+
+.btn {
+    background-color: #007bff; /* Color de fondo predeterminado */
+    color: white; /* Color de texto predeterminado */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+  }
+  
+  .btn:hover {
+    background-color: #1b5d80; /* Nuevo color de fondo al pasar el mouse */
+  }
+  
+  .btn:focus {
+    outline: none; /* Quita el contorno predeterminado */
+    box-shadow: 0 0 0 3px rgba(204, 0, 197, 0.5); /* Agrega un contorno personalizado */
+  }
+  
