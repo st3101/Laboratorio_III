@@ -22,13 +22,18 @@ function onInit(){
         for (let i = 0; i < form.length; i++) {
     
         const element = form.elements[i];
-        let str = element.name + ": " + element.value;
-    
-        if (element.type === "radio") {
-            str = element.name + ": " + (element.checked ? "on" : "off");
+        let str;
+
+        if (element.type === "radio" || element.type === "checkbox") {
+             //str = element.id + ": " + (element.checked ? "on" : "off");
+            if(element.checked ==! true)
+                continue;
+            str = element.name + ": " + element.id;
+
         }
-        else if (element.type === "checkbox") {
-            str = element.name + ": " + (element.checked ? "on" : "off");
+        else
+        {
+            str = element.name + ": " + element.value;
         }
         
         console.log(str);
