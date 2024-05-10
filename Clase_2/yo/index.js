@@ -7,38 +7,44 @@
 // document.addEventListener("DOMContentLoaded", onInit); // importante no poner parentesis
 
 //const form;
-let str = [];
+const array = [];
+
 document.addEventListener("DOMContentLoaded",onInit);
 
 function onInit(){
     form = document.getElementById("form-usuario");
+    
 
     form.addEventListener("submit", (e) => {
         
         // Luego del primer parcial, comenzaremos a enviar los datos a un externo
         // evito el comportamiento que realiza por defecto
         e.preventDefault();
-
+        
         for (let i = 0; i < form.length; i++) {
     
-        const element = form.elements[i];
-        let str;
+            const element = form.elements[i];
+            let str;        
+            let val;
+            if (element.type === "radio" || element.type === "checkbox") {
+                //str = element.id + ": " + (element.checked ? "on" : "off");
+                if(element.checked ==! true)
+                    continue;
+                str = element.name + ": " + element.id;
+                val = element.checked ? "on" : "off";
 
-        if (element.type === "radio" || element.type === "checkbox") {
-             //str = element.id + ": " + (element.checked ? "on" : "off");
-            if(element.checked ==! true)
-                continue;
-            str = element.name + ": " + element.id;
-
-        }
-        else
-        {
-            str = element.name + ": " + element.value;
-        }
-        
-        console.log(str);
+            }
+            else
+            {
+                str = element.name + ": " + element.value;
+                val = element.checked ? "on" : "off";
+            }
+            
+            const aux = { key: element.name, value: val}
+            array.push(aux);
         }
 
+        console.log(array);
     });
 }
 
