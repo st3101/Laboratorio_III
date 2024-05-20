@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+    <title>Clase 2</title>
+</head>
+
+<body>
+
+    <!-- Formulario -->
+    <form  action="" method="post" id="form-usuario">        
+        <h2>Formulario</h2>
+        <!-- Inputs Text Datos-->
+        <div class="form-group">
+            <!-- Nombre -->
+            <div>
+                <label for="nombre">Nombre</label> 
+                <input 
+                type="text" 
+                name="nombre" 
+                id="nombre" 
+                autocomplete="off" 
+                placeholder="Ingrese nombre..">
+            </div>
+            
+            <!-- Edad -->
+            <div>
+                <label for="edad">Edad</label>
+                <input type="number" 
+                name="edad" 
+                id="edad"
+                max="150"
+                min="18"
+                autocomplete="on"
+                placeholder="Ingrese su edad">
+            </div>
+
+            <!-- Email -->
+            <div>
+                <label for="email">Email</label>
+                <input 
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="on"
+                placeholder="Ingrese su email">    
+            </div>
+            
+            <!-- Contraseña -->
+            <div>
+                <label for="contraseña">Contraseña</label>
+                <input type="password" 
+                name="contraseña" 
+                id="contraseña" 
+                placeholder="Ingrese contraseña..">
+            </div>
+        </div>
+
+        <!-- Inputs Checkbox Musica-->
+        <div class="form-group">
+
+            <!-- Rock -->
+            <label for="rock">Rock</label>
+            <input 
+            type="checkbox" 
+            name="Musica" 
+            id="rock">
+
+            <br>
+
+            <!-- Reaggea -->
+            <label for="reggea">Reggae</label>
+            <input 
+            type="checkbox" 
+            name="Musica" 
+            id="reggea">
+
+            <br>
+
+            <!-- Pop -->
+            <label for="pop">Pop
+            </label>
+            <input 
+            type="checkbox" 
+            name="Musica" 
+            id="pop">
+
+        </div>
+
+        <!-- Inputs Radio Genero-->
+        <div class="form-group">
+            <!-- Femenino -->
+            <label for="rFemenino">Femenino</label>
+            <input 
+            type="radio" 
+            name="Genero" 
+            id="rFemenino">
+
+            <br>
+
+            <!-- Masculino -->
+            <label for="rMasculino">Masculino</label>
+            <input 
+            type="radio" 
+            name="Genero" 
+            id="rMasculino">
+
+            <br>
+        
+            <!-- Transformer -->
+            <label for="rTransformer">Transformer</label>
+            <input 
+            type="radio" 
+            name="Genero" 
+            id="rTransformer">
+        </div>
+
+        <!-- Inputs Radio Color-->
+        <div class="form-group">
+            <!-- Blanco -->
+            <label for="rBlanco">Blanco</label>
+            <input 
+            type="radio" 
+            name="Color" 
+            id="rBlanco">
+
+            <br>
+
+            <!-- Marron -->
+            <label for="rMarron">Marron</label>
+            <input 
+            type="radio" 
+            name="Color" 
+            id="rMarron">
+
+            <br>
+        
+            <!-- Negro -->
+            <label for="rNegro">Negro</label>
+            <input 
+            type="radio" 
+            name="Color" 
+            id="rNegro">
+        </div>
+
+        <!-- Inputs Select Pais-->
+        <div class="form-group">
+            <label for="pais">Pais</label>
+
+            <select name="pais" id="pais">
+            <optgroup label="Lat">
+                <option value="1">Argentina</option>
+                <option value="2">Brazion</option>
+                <option value="3">Francia</option>
+            </optgroup>
+
+            <optgroup label="Eur">
+                <option value="4">Argentina</option>
+                <option value="5">Brazion</option>
+                <option value="6">Francia</option>
+            </optgroup>
+            </select>
+        </div>
+    
+        <!-- Inputs TextArea Observaciones-->
+        <div class="form-group">
+            <label for="observacion">Observacion</label>
+            <textarea
+            type="text"
+            name="observacion"
+            id="observacion"
+            rows="4"
+            placeholder="Ingrese Observacion.."></textarea>
+        </div>
+
+        <!-- Inputs Files -->
+        <div class="form-group">
+            <label for="archivo">Archivo</label>
+            
+            <input class="text"
+            type="file"
+            name="archivo"
+            id="archivo"
+            placeholder="Ingrese Archivo..">
+
+        </div>
+
+        <!-- button submit -->
+        
+        <button class="btn" type="submit">Enviar</button>
+    
+    </form>
+</body>
+</html>

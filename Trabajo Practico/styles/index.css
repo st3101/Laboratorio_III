@@ -1,0 +1,359 @@
+@font-face {
+  font-family: poppins;
+  src: url(../assets/fonts/Poppins-Black.ttf);
+
+  font-family: verdanaPro;
+  src: url(../assets/fonts/VerdanaPro-Light.ttf);
+
+  font-family: candara;
+  src: url(../assets/fonts/Candara.ttf);
+
+  font-family: fina;
+  font-family: url(../assets/fonts/quiere\ Quire\ Sans\ Extralight.ttf);
+}
+
+header {
+  padding: 2rem;
+  background-color: grey;
+  background-image: url(../assets/images/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /* Asegura que la imagen cubra todo el fondo */
+
+
+  display: flex;
+  /* Asegúrate de que `display: flex` esté presente */
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100vh;
+
+  font-family: Arial, sans-serif;
+}
+
+.header-content {
+  margin: 20px;
+  /* Ajusta el margen según lo necesites */
+}
+
+
+@media(max-width:760px) {
+  header {
+    background-image: none;
+    background: green;
+  }
+}
+
+.barra {
+  padding-top: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header nav ul {
+  text-decoration: none;
+  list-style-type: none;
+
+  flex-direction: row;
+  justify-content: right;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+header h1 {
+  color: white;
+  width: 700px;
+  font-size: 50px;
+}
+
+.card {
+  background: var(--tertiary-color);
+
+  border-radius: 1rem; 
+  border: #bebebe solid 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra suave para resaltar la tarjeta */
+}
+
+.house-articles {
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: center;
+
+  padding: 2rem;
+  gap: 1rem;
+
+  font-family: candara;
+}
+
+.house-article {
+  width: 400px;
+}
+
+.house-article .card-img img {
+  width: 100%;
+  height: auto;
+
+  opacity: 0.75;
+  transition: opacity 1s;
+
+}
+
+.house-article .card-img img:hover {
+  opacity: 1;
+}
+
+
+.card-body {
+  padding: 1rem;
+
+  flex-direction: column;
+
+  gap: 1rem;
+}
+
+.card-body h3 {
+  font-size: 30px;
+}
+
+.card-body b {
+  font-size: 20px;
+  color:#008000;
+}
+
+.house-details {
+  width: 100%;
+
+  justify-content: center;
+
+  gap: 2rem;
+}
+
+.house-detail {
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1rem;
+}
+
+.card-body button {
+  height: 2rem;
+
+  color: var(--secondary-color);
+  background: var(--quaternary-color);
+}
+
+.btnTodas{
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem;
+}
+
+.btnTodas button{
+  background-color: #71b100;
+  color: white;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 0px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+/*-----------------------------------------*/
+.container-sections{
+  line-height: 2rem;
+}
+.container-sections  h2{
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 3rem;
+  color: var(--primary-color);
+  padding-top: 3rem;
+  font-family: candara;
+  font-weight: 300;
+
+}
+
+.container-details {
+  color: var(--primary-color);  /* Cambia el color de las palabras dentro de los elementos h3 a azul */
+
+  padding: 3rem;
+  display: flex;
+
+  justify-content: space-between; /* Centra verticalmente */
+  flex: 1; /* Distribuye el espacio entre los elementos hijos */
+  text-align: center; /* Ocupa el mismo espacio en cada columna */
+
+}
+
+.container-detail{
+  padding: 3rem;
+}
+
+.container-detail img {
+  height: 10rem;
+  /* Ajusta el tamaño según tus necesidades */
+  margin-bottom: 10px;
+}
+
+.container-detail h3 {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 2rem;
+  color: var(--primary-color);
+  font-family: candara;
+}
+
+/* Estilos para los párrafos de texto */
+.container-detail p {
+  font-size: 20px;
+  color: var(--primary-color);
+  /* font-family: candara;
+  line-height: 2rem; */
+}
+
+#container-detail{
+  border: 2px solid;
+}
+
+/* ------------------ */
+
+.bannerInterno {
+  background-image: url(../assets/images/encuentra.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto; /* 100% del ancho del viewport */
+  height: 75vh; /* 75% de la altura del viewport */
+}
+
+.bannerData,
+.bannerData h2,
+.bannerInterno p {
+  color: var(--secondary-color);
+  text-align: start; /* Puedes considerar usar `left` para mayor compatibilidad */
+}
+
+.bannerData {
+  margin-left: 4rem;
+}
+
+.bannerData h2 {
+  padding-top: 10%;
+}
+
+.bannerInterno p {
+  margin-top: 3%;
+  padding-bottom: 3%;
+  font-size: 1.3rem;
+}
+
+.bannerInterno button {
+  background-color: var(--quaternary-color);
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.bannerInterno button:hover {
+  background-color: rgb(215, 118, 0);
+}
+
+/* -------------------- */
+
+.foro{
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 5rem;
+  margin: 3rem;
+}
+
+.foro h2{
+  font-family: candara;
+  font-weight: 300;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 2rem;
+}
+
+.foro img{
+  width: 17rem;
+
+}
+
+.exhibidor{
+  display: flex;
+  width: 55vw;
+  padding-bottom: 1rem;
+  font-family: candara;
+}
+
+.exhibidor h3{
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.exhibidor h4{
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+.publicador{
+  color: orange;
+
+}
+
+.text {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+
+}
+
+.text p {
+  line-height: 1.6rem;
+}
+
+.text-comentario {
+  color: var(--secondary-color);
+  background-color: #71b100;
+  font-size: 2rem;
+  padding: 4rem;
+  border-radius: 1rem;
+  height: auto;
+  overflow: auto;
+}
+
+.footer {
+  justify-content: space-between;
+  padding: 2%;
+  background-color: #333333;
+}
+
+.flex .footer {
+  margin: 2rem;
+}
+
+.footer p {
+  color: var(--secondary-color);
+  font-family: candara;
+}
+
+.footer a {
+  font-family: candara;
+  margin-right: 1rem; 
+}
