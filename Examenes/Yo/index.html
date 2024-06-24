@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" id="a">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/estilo.css">
+    <script src="./js/script.js" type="module" defer></script>
+    <title>Document</title>
+</head>
+
+<!-- header -->
+<div>
+    <header>
+        <div class="headerPrincipal">
+            <div>
+                <img src="./assets/logo.svg" alt="">
+            </div>
+
+            <div>
+                <nav>
+                    <ul>
+                        <a href="#">Inicio</a>
+                        <a href="#">Acerca</a>
+                        <a href="#">Servicios</a>
+                        <a href="#">Contacto</a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+        <div>
+            <img src="./assets/banner.jpg" alt="" id="banner">
+        </div>
+    </header>
+</div>
+
+<body>
+
+    <!-- Formulario -->
+    <div class="formulario">
+        <form action="" method="post" id="formulario-test">
+            <h2>Formulario</h2>
+            <!-- Inputs Text Datos-->
+            <div class="form-group">
+                <!-- Nombre -->
+                <div class="form-texto">
+                    <div>
+                        <label for="nombre">Nombre</label>
+                    </div>
+                    <div>
+                        <input type="text" name="nombre" id="nombre" autocomplete="off" placeholder="Ingrese nombre..">
+                    </div>
+                </div>
+
+                <!-- Edad -->
+                <div class="form-texto">
+                    <label for="edad">Edad</label>
+                    <div>
+                        <input type="number" name="edad" id="edad" max="150" min="18" autocomplete="on" placeholder="Ingrese su edad">
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="email">Email</label>
+                    <div>
+                        <input type="email" name="email" id="email" autocomplete="on" placeholder="Ingrese su email">
+                    </div>
+                </div>
+
+                <!-- Contraseña -->
+                <div>
+                    <label for="contraseña">Contraseña</label>
+                    <div>
+                        <input type="password" name="contraseña" id="contraseña" placeholder="Ingrese contraseña..">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inputs Checkbox Musica-->
+            <div class="form-group">
+
+                <!-- Rock -->
+                <label for="rock">Rock</label>
+                <input type="checkbox" name="Musica" id="rock">
+
+                <br>
+
+                <!-- Reaggea -->
+                <label for="reggea">Reggae</label>
+                <input type="checkbox" name="Musica" id="reggea">
+
+                <br>
+
+                <!-- Pop -->
+                <label for="pop">Pop
+                </label>
+                <input type="checkbox" name="Musica" id="pop">
+
+            </div>
+
+            <!-- Inputs Radio Genero-->
+            <div class="form-group">
+                <!-- Femenino -->
+                <label for="rFemenino">Femenino</label>
+                <input type="radio" name="Genero" id="rFemenino">
+
+                <br>
+
+                <!-- Masculino -->
+                <label for="rMasculino">Masculino</label>
+                <input type="radio" name="Genero" id="rMasculino">
+
+                <br>
+
+                <!-- Transformer -->
+                <label for="rTransformer">Transformer</label>
+                <input type="radio" name="Genero" id="rTransformer">
+            </div>
+
+            <!-- Inputs Radio Color-->
+            <div class="form-group">
+                <!-- Blanco -->
+                <label for="rBlanco">Blanco</label>
+                <input type="radio" name="Color" id="blanco">
+
+                <br>
+
+                <!-- Marron -->
+                <label for="rMarron">Marron</label>
+                <input type="radio" name="Color" id="marron">
+
+                <br>
+
+                <!-- Negro -->
+                <label for="rNegro">Negro</label>
+                <input type="radio" name="Color" id="negro">
+            </div>
+
+            <!-- Inputs Select Pais-->
+            <div class="form-group">
+                <label for="pais">Pais</label>
+
+                <select name="pais" id="pais">
+                    <optgroup label="Lat">
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brazion">Brazion</option>
+                        <option value="Francia">Francia</option>
+                    </optgroup>
+
+                    <optgroup label="Eur">
+                        <option value="4">Argentina</option>
+                        <option value="5">Brazion</option>
+                        <option value="6">Francia</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <!-- Inputs TextArea Observaciones-->
+            <div class="form-group">
+                <label for="observacion">Observacion</label>
+                <textarea type="text" name="observacion" id="observacion" rows="4"
+                    placeholder="Ingrese Observacion.."></textarea>
+            </div>
+
+            <!-- Inputs Files -->
+            <div class="form-group">
+                <label for="archivo">Archivo</label>
+
+                <input class="text" type="file" name="archivo" id="archivo" placeholder="Ingrese Archivo..">
+
+            </div>
+
+            <!-- button submit -->
+            <div class="form-group">
+                <button class="btn" type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+<!-- Tabla -->
+<div id="tabla-container" class="tabla">
+    <table id="mi-tabla">
+        <thead>
+            <tr>
+                <th class="columna-id">ID</th>
+                <th class="columna-nombre">Nombre</th>
+                <th class="columna-email">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="columna-id">1</td>
+                <td class="columna-nombre">Juan Pérez</td>
+                <td class="columna-email">juan.perez@example.com</td>
+            </tr>
+            <tr>
+
+        </tbody>
+    </table>
+</div>
+
+</body>
+
+<!-- Footer -->
+    <div>
+        <footer>
+            <div class="footer">
+                <div>
+                    <p>Todos los derechos reservados <date>2024</date> &copy;</p>
+                </div>
+            </div>
+    
+        </footer>
+    </div>
+
+</html>

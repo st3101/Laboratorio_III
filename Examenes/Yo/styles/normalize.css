@@ -1,0 +1,29 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #181818;
+    --tertiary-color: #484747;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: var(--tertiary-color); */
+
+}
+
+head nav ul{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}

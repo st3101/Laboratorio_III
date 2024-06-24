@@ -1,0 +1,77 @@
+:root{
+    --primary-color: #000000;
+    --secondary-color: #484747;
+
+}
+
+.headerPrincipal{
+    display: flex;
+    flex-direction: row;
+    background-color: var( --secondary-color);
+    justify-content:space-around; 
+    align-items: center;
+}
+
+a{
+    color: rgb(188, 188, 188);
+    margin: 5px;
+    text-decoration: none;
+}
+
+#banner{
+    width: 100%; /* Ancho del contenedor */  
+    height: 10%; /* Altura del contenedor */
+}
+
+/* Formulario */
+.formulario{
+    background-color: #585c92;
+    border-radius: 0.5rem;
+    margin: 3rem;
+    padding: 1rem;
+    color: var(--primary-color)
+}
+.formulario h2{
+    text-align: center;
+}
+
+.form-group{
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+    gap: 0.5rem;
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color: #4c93af; /* Verde */
+    border: none;
+    border-radius: 0.5rem; /* Hace el botón completamente redondo */
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3b768e; /* Color verde más oscuro al pasar el ratón */
+}
+
+.footer{
+    justify-content: "center";
+    background-color: var( --secondary-color);
+    padding: 10px; 
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.tabla{
+    display: flex;
+    justify-content: center;
+    background-color: #585c92;
+    
+}
+
+.tabla th, .tabla td {
+    padding: 10px; /* Espacio dentro de las celdas */
+    text-align: left;
+    border: 0.1px solid #ddd; /* Bordes de las celdas */
+}
