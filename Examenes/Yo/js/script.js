@@ -8,11 +8,20 @@ let form = null;
 document.addEventListener("DOMContentLoaded", onInit);
 
 function onInit() {
-    cargarFormulario();
+    //loadItems();
+    obtenerFormulario();
     EscuchandoFormulario();
 }
 
-function cargarFormulario(){
+// loadItems(){
+//     let objetos = leer(KEY_STORAGE) || [];
+
+//     objetos.forEach(obj => {
+//         const buffer = new Usuario(obj.id);
+//     });
+// }
+
+function obtenerFormulario(){
     form = document.getElementById('formulario-test');
 }
 
